@@ -6,7 +6,7 @@ import QuoteRequest from "./sections/QuoteRequest";
 import Services from "./sections/Services";
 import Videos from "./sections/Videos";
 
-export default function () {
+export default function Page () {
   return (
     <>
       <Hero />
