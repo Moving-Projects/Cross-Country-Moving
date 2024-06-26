@@ -1,7 +1,7 @@
 import ReviewList from "../components/ReviewList";
 import Menu from "../components/Menu";
 
-export default function () {
+export default function Hero () {
     return (
         <>
             <Menu />

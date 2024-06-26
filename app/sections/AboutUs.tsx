@@ -1,4 +1,4 @@
-export default function () {
+export default function AboutUs () {
     return (
         <div className="flex flex-col lg:flex-row-reverse mt-20 lg:mt-32 px-4 lg:max-w-[120rem] lg:mx-auto lg:px-48 lg:justify-between lg:gap-32">
             <div className="relative mb-2 lg:flex-1">

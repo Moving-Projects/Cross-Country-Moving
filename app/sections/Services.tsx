@@ -1,6 +1,6 @@
 import ServicesCard from "../components/ServicesCard";
 
-export default function () {
+export default function Services () {
     return (
         <div className="pt-16 lg:pt-40 px-4 lg:max-w-[120rem] lg:mx-auto lg:px-48">
             <div className="flex flex-col lg:flex-row lg:justify-between mb-14 lg:mb-28">

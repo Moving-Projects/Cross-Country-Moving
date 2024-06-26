@@ -1,4 +1,4 @@
-export default function ({title, content, image}: {title: string, content: string, image: string}) {
+export default function BenefitCard ({title, content, image}: {title: string, content: string, image: string}) {
     return (
         <div className="rounded-3xl lg:rounded-[3rem] overflow-hidden shadow-xs lg:shadow-sm w-full border border-accent">
             <img src={image} alt="image for benefits" className="w-full"/>

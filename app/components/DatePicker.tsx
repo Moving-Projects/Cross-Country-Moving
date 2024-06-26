@@ -4,7 +4,7 @@ import { DatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import { useEffect, useState } from 'react';
 
-export default function () {
+export default function DatePickerElement () {
   const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-export default function () {
+export default function ReviewList () {
     return (
         <div className="bg-black">
             <div className="py-4 lg:py-8 px-8 lg:px-48 flex justify-between max-w-[120rem] mx-auto">

@@ -12,7 +12,7 @@ const videos = [
 ]
 
 
-export default function () {
+export default function Videos () {
     const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
     useEffect(() => {
@@ -45,7 +45,7 @@ export default function () {
             }}>
                 <img src="/video-bg-mobile.svg" alt="video section background" className='absolute -z-10 w-[calc(100%+32px)] max-w-none top-[calc(50%-12px)] -translate-y-1/2 -left-4 lg:hidden' draggable={false}/>
                 <SplideTrack>
-                    <Videos />
+                    <VideosElement />
                 </SplideTrack>
 
                 <div className="splide__arrows">
@@ -57,7 +57,7 @@ export default function () {
     )
 }
 
-const Videos = () => {
+const VideosElement = () => {
     return (
         <>
             {

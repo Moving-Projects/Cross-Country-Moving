@@ -1,4 +1,4 @@
-export default function ({title, content, image, split=false}: {title: string, content: string, image: string, split?: boolean}) {
+export default function ServicesCard ({title, content, image, split=false}: {title: string, content: string, image: string, split?: boolean}) {
     return (
         <div className="rounded-3xl lg:rounded-[3rem] border border-green p-4 lg:pt-12 lg:pb-[4.5rem] lg:px-8 relative shadow-sm lg:flex-1">
             <img src={image} alt="local move icon" className="absolute size-20 lg:w-[30%] 2xl:w-40 lg:h-auto 2xl:h-40 right-8 -top-6 lg:-top-12"/>

@@ -1,6 +1,6 @@
 import BenefitCard from "../components/BenefitCard";
 
-export default function () {
+export default function Benefits () {
     return (
         <div className="mt-20 lg:mt-32 px-4 lg:max-w-[120rem] lg:mx-auto lg:px-48">
              <p className="font-russo text-xs lg:text-base mb-4 lg:mb-6 leading-none">WHO ARE WE</p>

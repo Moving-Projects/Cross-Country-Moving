@@ -1,4 +1,4 @@
-export default function () {
+export default function Menu () {
     return (
         <div className="xl:px-48 xl:max-w-[120rem] xl:mx-auto flex justify-between items-center pt-4 px-8 xl:py-8 relative">
             <img src="/logo.png" alt="logo" className="h-8 xl:h-14"/>

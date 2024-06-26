@@ -1,4 +1,4 @@
-export default function () {
+export default function Footer () {
     return (
         <div className="px-4 lg:max-w-[120rem] lg:mx-auto lg:px-48">
             <div className="bg-black py-6 lg:pt-12 lg:pb-8 px-8 lg:px-32 rounded-t-3xl lg:rounded-t-[3rem]">

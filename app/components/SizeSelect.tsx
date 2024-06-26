@@ -4,7 +4,7 @@ import Select from '@mui/joy/Select';
 import Option from '@mui/joy/Option';
 import { useEffect, useState } from "react";
 
-export default function () {
+export default function SizeSelect () {
     const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
     useEffect(() => {

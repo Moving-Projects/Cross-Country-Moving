@@ -7,7 +7,7 @@ const testimonials = [
     ["JHON PARK, MINESOTA", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan."],
 ]
 
-export default function () {
+export default function Testimonials () {
     return (
         <div className="mt-20 px-4">
             <div className="px-4 py-6 bg-accent">
@@ -17,7 +17,7 @@ export default function () {
                     type: 'loop',
                 }}>
                 <SplideTrack>
-                    <Testimonials />
+                    <TestimonialsElement />
                 </SplideTrack>
             </Splide>
             </div>
@@ -25,7 +25,7 @@ export default function () {
     )
 }
 
-const Testimonials = () => {
+const TestimonialsElement = () => {
     return (
         <>
             {
@@ -33,7 +33,7 @@ const Testimonials = () => {
                 testimonials.map((testimonial, index) => {
                     return (
                         <SplideSlide className='grid grid-cols-2' key={index}>
-                            <div className='absolute top-0 left-0 w-full h-full bg-cover bg-center flex justify-center items-center' style={{backgroundImage: `url(${img + ".png"})`}}>
+                            <div className='absolute top-0 left-0 w-full h-full bg-cover bg-center flex justify-center items-center' style={{backgroundImage: `url(".png"})`}}>
                                 <div className='size-7 lg:size-14 bg-accent rounded-full flex justify-center items-center'>
                                     <img src="play-triangle.svg" alt="play triangle" className='w-3 lg:w-6'/>
                                 </div>
