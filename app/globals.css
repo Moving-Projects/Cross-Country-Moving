@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #F4F1FF;
+  font-family: "Barlow", sans-serif;
+  color: #1E1E1E;
+}
+
+input {
+  font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+  
+}
+
+@media (min-width: 1536px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.splide__pagination {
+  bottom: 0 !important;
+}
+
+.splide__pagination__page {
+  width: 15px !important;
+  height: 15px !important;
+  border: 1px solid #215250 !important;
+  background-color: transparent !important;
+  filter: drop-shadow(2px 2px 1px transparent) !important;
+  margin: 0px 4px !important;
+
+  transition: all .2s !important;
+}
+
+.splide__pagination__page.is-active {
+  transform: scale(1) !important;
+  background-color: #49D3CC !important;
+  filter: drop-shadow(2px 2px 1px #215250) !important;
+
+}
+
+.Mui-focused fieldset.MuiOutlinedInput-notchedOutline {
+  border-color: #1e1e1e !important;
+}
+
+.MuiSelect-listbox {
+  font-size: 14px !important;
+}
+
+
+@media (min-width: 1024px) {
+  .MuiSelect-listbox {
+    font-size: 16px !important;
+  }
+}
+
+#get-quote:hover img {
+  animation: shake .85s infinite ;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  20% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  35% {
+    transform: rotate(15deg) scale(1.05);
+  }
+
+  50% {
+    transform: rotate(-15deg) scale(1.1);
+  }
+
+  65% {
+    transform: rotate(15deg) scale(1.05);
+  }
+
+  80% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
