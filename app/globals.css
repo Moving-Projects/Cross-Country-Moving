@@ -32,28 +32,6 @@ input {
   }
 }
 
-.splide__pagination {
-  bottom: 0 !important;
-}
-
-.splide__pagination__page {
-  width: 15px !important;
-  height: 15px !important;
-  border: 1px solid #215250 !important;
-  background-color: transparent !important;
-  filter: drop-shadow(2px 2px 1px transparent) !important;
-  margin: 0px 4px !important;
-
-  transition: all .2s !important;
-}
-
-.splide__pagination__page.is-active {
-  transform: scale(1) !important;
-  background-color: #49D3CC !important;
-  filter: drop-shadow(2px 2px 1px #215250) !important;
-
-}
-
 .Mui-focused fieldset.MuiOutlinedInput-notchedOutline {
   border-color: #1e1e1e !important;
 }

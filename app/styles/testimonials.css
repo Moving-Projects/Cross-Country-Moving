@@ -1,0 +1,20 @@
+#testimonials .slick-slider .slick-slide {
+    padding: 0 3px;
+}
+
+#testimonials .slick-dots li {
+    width: auto !important;
+    height: auto !important;
+    margin: 0 4px !important;
+  }
+
+@media (min-width: 1024px) {
+    #testimonials .slick-slider .slick-slide {
+        padding: 0 1rem;
+    }
+}
+
+#testimonials .slick-list {
+    padding-bottom: 3px;
+}
+
