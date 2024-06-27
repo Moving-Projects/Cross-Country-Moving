@@ -23,6 +23,10 @@
   
   }
 
+  .slick-slider .slick-slide {
+    cursor: pointer
+  }
+
   #videos .slick-slider .slick-slide {
     padding: 0 .25rem;
   }
