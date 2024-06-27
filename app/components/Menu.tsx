@@ -60,7 +60,7 @@ export default function Menu () {
                     <a href="" className="text-white font-bold text-base lg:text-lg 2xl:text-base relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-accent after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-left after:bottom-[-1px]">ABOUT US</a>
                     <a href="" className="text-white font-bold text-base lg:text-lg 2xl:text-base relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-accent after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-left after:bottom-[-1px]">CONTACTS</a>
                 </nav>
-                <button className="bg-black py-[1.125rem] items-center gap-2 px-8 rounded-3xl lg:text-lg 2xl:text-base hidden xl:flex " id="get-quote">
+                <button className="bg-black py-[1.125rem] items-center gap-2 px-8 rounded-3xl lg:text-lg 2xl:text-base hidden xl:flex hover:bg-[#363636] transition duration-300" id="get-quote">
                     <img src="/quote-icon.svg" alt="quote icon" className="size-6 mb-[1px]"/>
                     <p className="font-bold text-white">GET A QUOTE</p>
                 </button>

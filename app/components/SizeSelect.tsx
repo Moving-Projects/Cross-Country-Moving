@@ -27,7 +27,7 @@ export default function SizeSelect () {
         <Select placeholder="Moving Size" 
             sx={{
                 borderRadius: '1.5rem',
-                backgroundColor: '#f1f1f1',
+                backgroundColor: 'transparent',
                 borderColor: "#1e1e1e",
                 paddingY: isMobile ? '.5rem' : '.65rem',
                 paddingLeft: isMobile ? '1rem' : '2rem',

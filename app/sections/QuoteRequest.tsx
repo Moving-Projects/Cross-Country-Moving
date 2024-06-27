@@ -26,7 +26,7 @@ export default function QuoteRequest () {
                         </div>
                     </div>
                     
-                    <button className="bg-black text-white flex justify-center items-center rounded-3xl h-10 lg:h-[3.25rem] text-[14px] lg:text-[16px] mt-4 lg:mt-8 w-full py-3 lg:py-0 font-bold gap-1 lg:gap-2 group">
+                    <button className="bg-black text-white flex justify-center items-center rounded-3xl h-10 lg:h-[3.25rem] text-[14px] lg:text-[16px] mt-4 lg:mt-8 w-full py-3 lg:py-0 font-bold gap-1 lg:gap-2 group hover:bg-[#363636] transition duration-300">
                         SEND REQUEST
                         <img src="/left-arrow.svg" alt="left arrow" className="size-6 group-hover:translate-x-2 transition duration-300"/>
                     </button>
