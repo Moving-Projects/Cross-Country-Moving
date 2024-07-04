@@ -17,7 +17,7 @@ export default function FAQ () {
             <div className="lg:px-24">
                 {
                     answers.map((item: any, index) => (
-                        <Question item={item} index={index}/>
+                        <Question key={index} item={item} index={index}/>
                     ))
                 }
             </div>
