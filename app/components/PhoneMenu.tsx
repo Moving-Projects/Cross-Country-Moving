@@ -31,7 +31,7 @@ export default function PhoneMenu ({open, page}: {open: boolean, page: string}) 
         <motion.div className="h-screen w-screen top-0 left-0 fixed z-30 overflow-hidden bg-white" variants={variants} animate={open ? "visible" : "hidden"} transition={{ ease: "easeOut", duration: .5 }} initial="hidden">
             <motion.ul className="flex flex-col gap-6 justify-center items-center h-screen w-screen relative" variants={list} animate={open ? "visible" : "hidden"} initial="hidden">
                 <motion.li variants={item}>
-                    <a href="" className={`text-[2rem] font-russo ${page === "home" ? "relative after:absolute after:left-0 after:-bottom-1 after:bg-accent after:w-full after:h-[2px]" : ""}`}>HOME</a>
+                    <a href="/" className={`text-[2rem] font-russo ${page === "home" ? "relative after:absolute after:left-0 after:-bottom-1 after:bg-accent after:w-full after:h-[2px]" : ""}`}>HOME</a>
                 </motion.li>
                 <motion.li variants={item}>
                     <a href="/long-distance-moves" className={`text-[2rem] font-russo ${page === "long" ? "relative after:absolute after:left-0 after:-bottom-1 after:bg-accent after:w-full after:h-[2px]" : ""}`}>LONG DISTANCE</a>
