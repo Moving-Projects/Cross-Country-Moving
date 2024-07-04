@@ -1,6 +1,8 @@
+import { Suspense } from "react";
 import Menu from "../components/Menu";
 import QuoteForm from "../components/QuoteForm";
 import Footer from "../home/Footer";
+import QuoteFormFallback from "../components/QuoteFormFallback";
 
 export default function page () {
     return (
@@ -29,7 +31,9 @@ export default function page () {
                             </div>
                         </div>
                     </div>
-                    <QuoteForm />
+                    <Suspense fallback={<QuoteFormFallback/>}>
+                        <QuoteForm />
+                    </Suspense>
                  </div>
             </div>
             <Footer />

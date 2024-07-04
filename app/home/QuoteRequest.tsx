@@ -1,4 +1,6 @@
 import QuoteForm from "../components/QuoteForm";
+import { Suspense } from 'react'
+import QuoteFormFallback from "../components/QuoteFormFallback";
 
 export default function QuoteRequest () {
     return (
@@ -9,9 +11,9 @@ export default function QuoteRequest () {
                     <p className="font-russo text-xs lg:text-base mb-4 lg:mb-6 leading-none text-white z-10 relative">BOOK US NOW</p>
                     <h3 className="font-russo text-2xl lg:text-5xl mb-8 lg:mb-0 text-white z-10 relative lg:leading-tight">Request a <br/> <span className="text-accent">Free Quote</span> <br className="hidden lg:block"/> Today</h3>  
                 </div>
-                 
-               <QuoteForm />
-               
+                <Suspense fallback={<QuoteFormFallback/>}>
+                    <QuoteForm />
+                </Suspense>
             </div>
         </div>
     )
