@@ -30,10 +30,11 @@ export default function SizeSelect () {
                 backgroundColor: 'transparent',
                 borderColor: "#1e1e1e",
                 paddingY: isMobile ? '.5rem' : '.65rem',
-                paddingLeft: isMobile ? '1rem' : '2rem',
+                paddingX: isMobile ? '1rem' : '2rem',
                 height: isMobile ? 'auto' : '3.25rem',
                 fontSize: isMobile ? 14 : 16,
-                boxSizing: 'border-box'
+                boxSizing: 'border-box',
+                fontWeight: 'medium'
             }}>
             <Option value="small">Small</Option>
             <Option value="medium">Medium</Option>

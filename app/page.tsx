@@ -1,17 +1,11 @@
-import AboutUs from "./sections/AboutUs";
-import Benefits from "./sections/Benefits";
-import Footer from "./sections/Footer";
-import Hero from "./sections/Hero";
-import QuoteRequest from "./sections/QuoteRequest";
-import Services from "./sections/Services";
-import Testimonials from "./sections/Testimonials";
-import Videos from "./sections/Videos";
-
-import type { Metadata } from 'next'
- 
-export const metadata: Metadata = {
-  title: 'Cross Country Moving',
-}
+import AboutUs from "./home/AboutUs";
+import Benefits from "./home/Benefits";
+import Footer from "./home/Footer";
+import Hero from "./home/Hero";
+import QuoteRequest from "./home/QuoteRequest";
+import Services from "./home/Services";
+import Testimonials from "./home/Testimonials";
+import Videos from "./home/Videos";
 
 export default function Page () {
   return (

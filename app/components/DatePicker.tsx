@@ -31,12 +31,12 @@ if (isMobile === null) return;
               textField: {
                 InputProps: {
                   placeholder: "Date *",
-                  style: {fontSize: isMobile ? 14 : 16}
+                  style: {fontSize: isMobile ? 14 : 16, fontWeight: 'medium'}
                 },
                 sx: {
                   '& input': {    
                         paddingY: isMobile ? '.5rem' : '.65rem',
-                        paddingLeft: isMobile ? '1rem' : '2rem',
+                        paddingX: isMobile ? '1rem' : '2rem',
                         height: isMobile ? 'auto' : '3.25rem',
                         boxSizing: 'border-box'
                       },

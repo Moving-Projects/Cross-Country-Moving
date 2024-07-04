@@ -14,7 +14,7 @@ export default function Services () {
                     <a href="" className="font-bold lg:text-lg relative after:absolute after:left-0 after:-bottom-1 after:bg-accent after:w-full after:h-[2px] hover:text-accent transition duration-300">MORE ABOUT US</a>
                 </div>
             </div>
-            <ServicesCardSection />
+            <ServicesCardSection rows={2}/>
         </div>
     )
 }

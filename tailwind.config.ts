@@ -21,7 +21,11 @@ const config: Config = {
         'sm': '4px 4px 2px 0px #215250;',
         'lg': '8px 8px 2px 0px #215250;',
         'xs': '2px 2px 2px 0px #215250;'
-      }
+      },
+      screens: {
+        '3xl': '1636px',
+        '4xl': '1800px'
+      },
     },
   },
   plugins: [],

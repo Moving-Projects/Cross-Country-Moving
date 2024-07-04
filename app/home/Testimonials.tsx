@@ -1,11 +1,8 @@
 'use client'
 
 import Slider from "react-slick";
-import "../styles/testimonials.css"
-import { useEffect, useState } from "react";
 
 export default function Testimonials () {
-    const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
     const settings = {
         customPaging: function(i:number) {
@@ -22,20 +19,6 @@ export default function Testimonials () {
         
     };
 
-    useEffect(() => {
-        if (window.innerWidth < 1024) setIsMobile(true); else setIsMobile(false);
-
-        const onResize = () => {
-            setIsMobile(window.innerWidth < 1024);
-        }
-
-        window.addEventListener("resize", onResize);
-    
-        return () => {
-            window.removeEventListener("resize", onResize);
-        }
-    }, []);
-
     return (
         <div className="mt-20 lg:mt-32 px-4 lg:max-w-[120rem] lg:mx-auto lg:px-48" id="testimonials">
             <div className="px-4 lg:px-8 pt-6 lg:py-12 pb-14 lg:pb-24 bg-accent rounded-3xl">
@@ -48,8 +31,6 @@ export default function Testimonials () {
                             <Card hidden={false} author="MARIA MAGDALENA, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus."/>
                             <Card hidden={true} author="JHON PARK, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan."/>
                             <Card hidden={true} author="MARIA MAGDALENA, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus."/>
-                            <Card hidden={true} author="JHON PARK, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan."/>
-                            <Card hidden={true} author="MARIA MAGDALENA, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus."/>
                         </div>
                     </div>
                     
@@ -59,24 +40,17 @@ export default function Testimonials () {
                             <Card hidden={false} author="MARIA MAGDALENA, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus."/>
                             <Card hidden={true} author="JHON PARK, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan."/>
                             <Card hidden={true} author="MARIA MAGDALENA, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus."/>
-                            <Card hidden={true} author="JHON PARK, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan."/>
-                            <Card hidden={true} author="MARIA MAGDALENA, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus."/>
                         </div>
                     </div>
 
-                    {
-                        isMobile && 
                     <div>
                         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 gap-y-4">
                             <Card hidden={false} author="JHON PARK, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan."/>
                             <Card hidden={false} author="MARIA MAGDALENA, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus."/>
                             <Card hidden={true} author="JHON PARK, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan."/>
                             <Card hidden={true} author="MARIA MAGDALENA, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus."/>
-                            <Card hidden={true} author="JHON PARK, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan."/>
-                            <Card hidden={true} author="MARIA MAGDALENA, MINESOTA" review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien utellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus."/>
                         </div>
                     </div>
-                    }
                     
                 </Slider>
             </div>
