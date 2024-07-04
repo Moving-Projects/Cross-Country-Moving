@@ -9,7 +9,7 @@ export default function Hero () {
             <div className="flex flex-col lg:flex-row pt-12 px-4 lg:pr-0 lg:pl-48 pb-[8rem] lg:pb-12 relative max-w-[120rem] mx-auto">
                 <div className="max-w-full lg:max-w-none">
                     <div className="pt-6 lg:pt-16 lg:pl-12 lg:pr-36 px-4 bg-accent rounded-3xl rounded-b-none lg:rounded-[3rem] lg:rounded-bl-none">
-                        <h1 className="text-[2rem] lg:text-[4rem] font-russo text-white mb-6 lg:mb-8 leading-tight">Where Efficiency <br className="hidden lg:block"/> &  <span className="hidden lg:inline">Reliability</span> <span className="inline lg:hidden">Safety</span> <span className="text-black">Cross</span> Paths</h1>
+                        <h1 className="text-[2rem] lg:text-[4rem] font-russo text-white mb-6 lg:mb-8 leading-tight">Find More About <br className="hidden lg:block"/> <span className="text-black">Cross</span> Country Moving</h1>
                         <h2 className="text-base leading-none lg:text-[2rem] lg:leading-8 font-bold mb-4 lg:mb-12">Your trusted partner for all your moving needs</h2>
                         <p className="text-white text-xs lg:text-2xl lg:leading-6 font-medium">Easily estimate your move <span className="text-black">for free.</span></p>
                     </div>

@@ -37,9 +37,9 @@ export default function ServicesCardSection ({rows}: {rows: number}) {
             {
               rows === 1 ?
               <motion.div className="flex flex-col lg:flex-row gap-10 lg:gap-8" variants={list} transition={{duration: .3}}>
-                <ServicesCard title="99.8%|Happy Customers" content="Need to move at an unusual time? We are available around the clock, every day of the year, to accommodate your schedule." image="/long-icon.svg" split={true}/>
-                <ServicesCard title="0.1%|Damaged Jobs" content="Moving your business? Our commercial move services are tailored to minimize downtime and ensure a seamless transition for your company." image="/commercial-icon.svg" split={true}/>
-                <ServicesCard title="2 Years|of Experience" content="Moving your business? Our commercial move services are tailored to minimize downtime and ensure a seamless transition for your company." image="/commercial-icon.svg" split={true}/>
+                <ServicesCard title="99.5%|Happy Customers" content="Our focus on customer satisfaction has resulted in nearly perfect feedback from our clients. We prioritize your needs and strive to exceed expectations with every move." image="/facts-1.png" split={true}/>
+                <ServicesCard title="0.1%|Damaged Goods" content="We take great care in handling your belongings, maintaining an exceptionally low rate of damaged items. Each item is treated with the utmost respect and protection during the moving process." image="/facts-2.png" split={true}/>
+                <ServicesCard title="2 Years|of Experience" content="In just two years, we have quickly established ourselves as a reliable and efficient moving company. We continue to refine our services to provide the best possible moving experience for our clients." image="/facts-3.png" split={true}/>
               </motion.div> :
               <>
                 <motion.div className="flex flex-col lg:flex-row gap-10 lg:gap-8 mb-10 lg:mb-28" variants={list} transition={{duration: .3}}>

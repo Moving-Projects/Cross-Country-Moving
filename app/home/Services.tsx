@@ -10,7 +10,7 @@ export default function Services () {
                     <h3 className="text-2xl lg:text-5xl font-russo">All Cross Country <span className="text-accent lg:block">Moving Services</span></h3>
                 </div>
                 <div className="lg:w-[41rem]">
-                    <p className="text-sm lg:text-lg font-medium mt-6 lg:mt-0 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mi nec tellus mattis accumsan. Ut quis est elit. Aliquam scelerisque sapien ultrices vehicula placerat. Ut aliquet ante mauris, et maximus odio mollis id. Integer ut dignissim risus.</p>
+                    <p className="text-sm lg:text-lg font-medium mt-6 lg:mt-0 mb-4">At Cross Country Moving Company, we are more than just movers; we are a team of dedicated professionals committed to making your moving experience as smooth and stress-free as possible.</p>
                     <a href="" className="font-bold lg:text-lg relative after:absolute after:left-0 after:-bottom-1 after:bg-accent after:w-full after:h-[2px] hover:text-accent transition duration-300">MORE ABOUT US</a>
                 </div>
             </div>
