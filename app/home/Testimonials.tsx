@@ -27,10 +27,10 @@ export default function Testimonials () {
                 <Slider {...settings} className='relative'>
                     <div className="h-full">
                         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 gap-y-4 lg:gap-y-8 min-h-full">
-                            <Card hidden={false} author="John and Sarah L." review="Cross Country Moving made our coast-to-coast relocation a breeze! The team was professional, courteous, and handled all our belongings with care. We couldn’t be happier with the service."/>
-                            <Card hidden={false} author="Mark R." review="Moving for a new job was stressful, but Cross Country Moving took all the worries off our shoulders. They were punctual, efficient, and kept us informed every step of the way. Highly recommend!"/>
-                            <Card hidden={true} author="Emily T." review="I was worried about moving my antique furniture, but Cross Country Moving took extra care to ensure everything arrived in perfect condition. Their packing services are top-notch!"/>
-                            <Card hidden={true} author="The Smith Family" review="Our family had a fantastic experience with Cross Country Moving. The staff was friendly and made the entire process enjoyable. We felt supported from start to finish."/>
+                            <Card hidden={false} author="Global Enterprises" review="We recently used Cross Country Moving for our office move, and they were outstanding. Their commercial moving team was well-organized and knew exactly what they were doing. They took special care with our delicate equipment and ensured everything was set up perfectly in our new location. Great job!"/>
+                            <Card hidden={false} author="Lisa H." review="I can't thank Cross Country Moving enough for their incredible service. Moving can be stressful, but their team made it so much easier. They were available 24/7 to address my concerns and provided excellent support throughout the move. I highly recommend their services to anyone in need of a reliable moving company."/>
+                            <Card hidden={true} author="Robert F." review="Cross Country Moving was recommended to me by a friend, and I'm so glad I chose them for my long-distance move. The movers were professional, and the customer service was exceptional. They made sure everything was packed securely and arrived in perfect condition. I'm very satisfied with their service."/>
+                            <Card hidden={true} author="The Garcia Family" review="I needed to move some items locally, and Cross Country Moving was the perfect choice. They were prompt, professional, and handled my belongings with care. Their rates were affordable, and the service was top-notch. I will definitely use them again for any future moves."/>
                         </div>
                     </div>
                     
