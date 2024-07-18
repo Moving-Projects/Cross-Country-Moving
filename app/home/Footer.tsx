@@ -18,9 +18,9 @@ export default function Footer () {
                     </div>
                     <div className="lg:mr-8">
                         <p className="font-russo text-sm lg:text-lg leading-4 lg:leading-6 mb-4 lg:mb-6 text-white">EXPLORE MORE</p>
-                        <a href="" className="text-sm lg:text-lg leading-4 lg:leading-6 mb-2 font-medium text-white block">Long Distance Move</a>
-                        <a href="" className="text-sm lg:text-lg leading-4 lg:leading-6 mb-2 font-medium text-white block">About Us</a>
-                        <a href="" className="text-sm lg:text-lg leading-4 lg:leading-6 mb-2 font-medium text-white block">Contacts</a>
+                        <a href="/long-distance-moves" className="text-sm lg:text-lg leading-4 lg:leading-6 mb-2 font-medium text-white block">Long Distance Move</a>
+                        <a href="/about-us" className="text-sm lg:text-lg leading-4 lg:leading-6 mb-2 font-medium text-white block">About Us</a>
+                        <a href="/contacts" className="text-sm lg:text-lg leading-4 lg:leading-6 mb-2 font-medium text-white block">Contacts</a>
                     </div>
                     <div className="flex gap-20 lg:gap-0 lg:flex-1 lg:justify-between">
                         <div>
@@ -35,12 +35,12 @@ export default function Footer () {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col lg:flex-row items-center lg:justify-between mt-20 lg:mt-32">
+                <div className="flex flex-col lg:flex-row items-center lg:justify-center mt-20 lg:mt-32">
                     <p className="text-xs lg:text-base font-medium mb-2 lg:mb-0 text-white text-center">Copyright © 2024 Cross Country Moving. <br className="lg:hidden"/> All rights reserved </p>
-                    <div className="flex items-center gap-2">
+                    {/* <div className="flex items-center gap-2">
                         <a href="https://studiomodvis.com/EN/home" className="text-xs lg:text-base font-medium text-white">Powered by Studio Modvis </a>
                         <img src="/modvis-logo.svg" alt="modvis logo" className="size-2 lg:size-3"/>
-                    </div>  
+                    </div>   */}
                 </div>
             </div>
         </div>

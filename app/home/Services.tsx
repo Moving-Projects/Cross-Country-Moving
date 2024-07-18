@@ -11,7 +11,7 @@ export default function Services () {
                 </div>
                 <div className="lg:w-[41rem]">
                     <p className="text-sm lg:text-lg font-medium mt-6 lg:mt-0 mb-4">At Cross Country Moving Company, we are more than just movers; we are a team of dedicated professionals committed to making your moving experience as smooth and stress-free as possible.</p>
-                    <a href="" className="font-bold lg:text-lg relative after:absolute after:left-0 after:-bottom-1 after:bg-accent after:w-full after:h-[2px] hover:text-accent transition duration-300">MORE ABOUT US</a>
+                    <a href="/about-us" className="font-bold lg:text-lg relative after:absolute after:left-0 after:-bottom-1 after:bg-accent after:w-full after:h-[2px] hover:text-accent transition duration-300">MORE ABOUT US</a>
                 </div>
             </div>
             <ServicesCardSection rows={2}/>

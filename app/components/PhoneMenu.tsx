@@ -58,10 +58,10 @@ export default function PhoneMenu ({open, page}: {open: boolean, page: string}) 
                 
                 <div className="absolute bottom-6 flex flex-col items-center w-full">
                     <p className="text-center font-medium text-xs">Copyright © 2024 Cross Country Moving. <br/> All rights reserved </p>
-                    <div className="flex items-center gap-2">
+                    {/* <div className="flex items-center gap-2">
                         <a href="https://studiomodvis.com/EN/home" className="text-xs font-medium">Powered by Studio Modvis </a>
                         <img src="/modvis-logo.svg" alt="modvis logo" className="size-2"/>
-                    </div>  
+                    </div>   */}
                 </div>
             </motion.ul>
         </motion.div>

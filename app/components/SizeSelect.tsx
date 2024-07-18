@@ -24,7 +24,7 @@ export default function SizeSelect () {
     if (isMobile === null) return;
 
     return (
-        <Select placeholder="Moving Size" 
+        <Select required placeholder="Moving Size *" 
             sx={{
                 borderRadius: '1.5rem',
                 backgroundColor: 'transparent',
@@ -34,11 +34,16 @@ export default function SizeSelect () {
                 height: isMobile ? 'auto' : '3.25rem',
                 fontSize: isMobile ? 14 : 16,
                 boxSizing: 'border-box',
-                fontWeight: 'medium'
+                fontWeight: 'regular',
+                fontFamily: 'Barlow',
             }}>
-            <Option value="small">Small</Option>
-            <Option value="medium">Medium</Option>
-            <Option value="big">Big</Option>
+            <Option value="studio" sx={{fontFamily: 'Barlow'}}>Studio</Option>
+            <Option value="1-bedroom" sx={{fontFamily: 'Barlow'}}>1 Bedroom</Option>
+            <Option value="2-bedroom" sx={{fontFamily: 'Barlow'}}>2 Bedroom</Option>
+            <Option value="3-bedroom" sx={{fontFamily: 'Barlow'}}>3 Bedroom</Option>
+            <Option value="4-bedroom" sx={{fontFamily: 'Barlow'}}>4+ Bedroom</Option>
+            <Option value="office" sx={{fontFamily: 'Barlow'}}>Office/Commercial</Option>
+            <Option value="other" sx={{fontFamily: 'Barlow'}}>Other</Option>
         </Select>
     )
 }

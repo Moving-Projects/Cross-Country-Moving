@@ -13,7 +13,7 @@ body {
   color: #1E1E1E;
 }
 
-input {
+input, textarea {
   font-size: 14px;
 }
 
@@ -22,7 +22,7 @@ input {
     font-size: 12px;
   }
 
-  input {
+  input, textarea {
     font-size: 16px;
   }
   
@@ -108,6 +108,14 @@ input {
 
 }
 
+.slick-slide {
+  height: auto !important;
+}
+
+.slick-slide > div {
+  height: 100%;
+}
+
 .slick-slider .slick-slide {
   cursor: pointer
 }
@@ -138,4 +146,9 @@ input {
   width: auto !important;
   height: auto !important;
   margin: 0 4px !important;
+}
+
+.slick-track {
+  display: flex !important;
+  align-items: stretch;
 }

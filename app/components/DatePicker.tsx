@@ -29,9 +29,10 @@ if (isMobile === null) return;
 
             slotProps={{ 
               textField: {
+                required: true,
                 InputProps: {
                   placeholder: "Date *",
-                  style: {fontSize: isMobile ? 14 : 16, fontWeight: 'medium'}
+                  style: {fontSize: isMobile ? 14 : 16, fontWeight: 'regular', fontFamily: 'Barlow'}
                 },
                 sx: {
                   '& input': {    
@@ -45,6 +46,9 @@ if (isMobile === null) return;
                         borderColor: '#1e1e1e',
                         paddingY: '.5rem',
                       },
+                      '& input::placeholder': {
+                        fontWeight: 'regular'
+                      }
                 }
               },
               layout: {

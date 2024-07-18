@@ -1,3 +1,4 @@
+import ScrollUpButton from "./components/ScrollUpButton";
 import AboutUs from "./home/AboutUs";
 import Benefits from "./home/Benefits";
 import Footer from "./home/Footer";
@@ -10,6 +11,7 @@ import Videos from "./home/Videos";
 export default function Page () {
   return (
     <>
+      <ScrollUpButton />
       <Hero />
       <Services />
       <Videos />
