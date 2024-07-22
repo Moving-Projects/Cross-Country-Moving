@@ -1,10 +1,12 @@
 'use client'
 
 import Slider from "react-slick";
-import { useEffect, useState } from 'react';
+import { RefObject, useEffect, useRef, useState } from 'react';
+import Video from "../components/Video";
 
 export default function Videos () {
     const [isMobile, setIsMobile] = useState<boolean | null>(null);
+    const [isDrag, setIsDrag] = useState(false);
 
     const NextArrow = (props: any) => {
         const { onClick } = props;
@@ -33,6 +35,12 @@ export default function Videos () {
         slidesToScroll: isMobile ? 2 : 3,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
+        beforeChange: () => {
+            setIsDrag(true)
+        },
+        afterChange: () => {
+            setIsDrag(false)
+        }
     };
 
     useEffect(() => {
@@ -56,48 +64,12 @@ export default function Videos () {
             <img src="/video-bg-pc.svg" alt="video section background" className='w-[calc(100%-24rem)] left-48 top-0 absolute hidden lg:block'/>
             <div className='slider-container'>
                 <Slider {...settings} className='mx-6 lg:mx-[8.5vw] relative lg:pt-16 lg:max-w-[70rem]'>
-                    <div className='relative rounded-xl overflow-hidden aspect-[151/282] lg:aspect-[306/567]'>
-                        <div className='absolute top-0 left-0 w-full h-full bg-cover bg-center flex justify-center items-center' style={{backgroundImage: "url(/videos/video-2.png)"}}>
-                            <div className='size-7 lg:size-14 bg-accent rounded-full flex justify-center items-center'>
-                                <img src="play-triangle.svg" alt="play triangle" className='w-3 lg:w-6'/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='relative rounded-xl overflow-hidden aspect-[151/282] lg:aspect-[306/567]'>
-                        <div className='absolute top-0 left-0 w-full h-full bg-cover bg-center flex justify-center items-center' style={{backgroundImage: "url(/videos/video-1.png)"}}>
-                            <div className='size-7 lg:size-14 bg-accent rounded-full flex justify-center items-center'>
-                                <img src="play-triangle.svg" alt="play triangle" className='w-3 lg:w-6'/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='relative rounded-xl overflow-hidden aspect-[151/282] lg:aspect-[306/567]'>
-                        <div className='absolute top-0 left-0 w-full h-full bg-cover bg-center flex justify-center items-center' style={{backgroundImage: "url(/videos/video-2.png)"}}>
-                            <div className='size-7 lg:size-14 bg-accent rounded-full flex justify-center items-center'>
-                                <img src="play-triangle.svg" alt="play triangle" className='w-3 lg:w-6'/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='relative rounded-xl overflow-hidden aspect-[151/282] lg:aspect-[306/567]'>
-                        <div className='absolute top-0 left-0 w-full h-full bg-cover bg-center flex justify-center items-center' style={{backgroundImage: "url(/videos/video-1.png)"}}>
-                            <div className='size-7 lg:size-14 bg-accent rounded-full flex justify-center items-center'>
-                                <img src="play-triangle.svg" alt="play triangle" className='w-3 lg:w-6'/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='relative rounded-xl overflow-hidden aspect-[151/282] lg:aspect-[306/567]'>
-                        <div className='absolute top-0 left-0 w-full h-full bg-cover bg-center flex justify-center items-center' style={{backgroundImage: "url(/videos/video-2.png)"}}>
-                            <div className='size-7 lg:size-14 bg-accent rounded-full flex justify-center items-center'>
-                                <img src="play-triangle.svg" alt="play triangle" className='w-3 lg:w-6'/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='relative rounded-xl overflow-hidden aspect-[151/282] lg:aspect-[306/567]'>
-                        <div className='absolute top-0 left-0 w-full h-full bg-cover bg-center flex justify-center items-center' style={{backgroundImage: "url(/videos/video-1.png)"}}>
-                            <div className='size-7 lg:size-14 bg-accent rounded-full flex justify-center items-center'>
-                                <img src="play-triangle.svg" alt="play triangle" className='w-3 lg:w-6'/>
-                            </div>
-                        </div>
-                    </div>
+                    <Video videoSrc="/videos/video-1" isDrag={isDrag}/>
+                    <Video videoSrc="/videos/video-2" isDrag={isDrag}/>
+                    <Video videoSrc="/videos/video-3" isDrag={isDrag}/>
+                    <Video videoSrc="/videos/video-3" isDrag={isDrag}/>
+                    <Video videoSrc="/videos/video-2" isDrag={isDrag}/>
+                    <Video videoSrc="/videos/video-1" isDrag={isDrag}/>
                 </Slider>
             </div>
         </div>

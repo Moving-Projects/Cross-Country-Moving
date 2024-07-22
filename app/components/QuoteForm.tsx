@@ -10,8 +10,20 @@ export default function QuoteForm () {
     const [collection, setCollection] = useState(searchParams.get('collection'));
     const [moving, setMoving] = useState(searchParams.get('moving'));
 
+    async function handleSubmit(event: any) {
+        event.preventDefault();
+  
+        const formData = new FormData(event.target);
+  
+        console.log(formData);
+        // const response = await fetch('/api/contact', {
+        //     method: 'post',
+        //     body: formData,
+        //    });
+      };
+
     return (
-        <form action="" className="bg-white rounded-3xl lg:rounded-[3rem] py-6 lg:py-12 px-4 lg:px-8 w-full max-w-[25rem] lg:max-w-none mx-auto lg:mx-0 lg:w-fit shadow-sm lg:shadow-lg z-10 relative lg:h-fit">
+        <form onSubmit={handleSubmit} action="" className="bg-white rounded-3xl lg:rounded-[3rem] py-6 lg:py-12 px-4 lg:px-8 w-full max-w-[25rem] lg:max-w-none mx-auto lg:mx-0 lg:w-fit shadow-sm lg:shadow-lg z-10 relative lg:h-fit">
         <div className="flex flex-col lg:flex-row gap-2 lg:gap-8 w-full lg:w-fit">
             <div className="flex flex-col gap-2 lg:gap-4 lg:flex-1">
                 <input required type="text" className="bg-transparent rounded-3xl border border-black py-2 lg:py-4 px-4 lg:px-8 placeholder:font-normal placeholder:text-opacity-50 lg:h-[3.25rem] focus:outline-black" placeholder="Moving From *" value={collection ? collection : undefined} onChange={(e) => {setCollection(e.currentTarget.value)}}/>
