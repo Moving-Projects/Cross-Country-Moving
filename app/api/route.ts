@@ -18,17 +18,12 @@ export async function POST(req: Request) {
     const emailHtml = render(Email({props: formData}))
 
     const data = {
-        to: 'tudorcebotarenco@gmail.com', 
+        to: 'contact@trekmovers.com', 
         subject: 'Quote Request | Cross Country Moving',
         html: emailHtml
     }
 
     const transporter = nodemailer.createTransport(mailConfig);
     await transporter.sendMail(data);
-    // transporter.sendMail(data, (err, info) => {
-    //     if (err) { 
-    //         return Response.json({msg:'Technical Issue!, Please click on resend for verify your Email.'}, {status: 500});
-    //     }
-    // });
     return Response.json({msg: "Email send succesfully!"}, {status: 201});
   }
