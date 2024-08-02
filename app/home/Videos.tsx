@@ -1,7 +1,6 @@
 'use client'
 
-import Slider from "react-slick";
-import { RefObject, useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Video from "../components/Video";
 
 export default function Videos () {
