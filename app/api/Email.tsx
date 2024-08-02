@@ -24,6 +24,9 @@ export default function Email({props}: {props: FormData}) {
                     <Row className='mb-4'>
                         <Column className='text-base'>Date: {props.get("date")?.toString()}</Column>
                     </Row>
+                    <Row className='mb-4'>
+                        <Column className='text-base'>Additional Information: {props.get("info")?.toString()}</Column>
+                    </Row>
                     <Row className='mb-2'>
                         <Column className='text-xl font-bold'>Client details:</Column>
                     </Row>
