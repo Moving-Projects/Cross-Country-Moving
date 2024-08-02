@@ -1,16 +1,9 @@
 import { useEffect, useRef, useState } from "react"
 
-export default function Video ({videoSrc, isDrag}: {videoSrc: string, isDrag: boolean}) {
+export default function Video ({videoSrc}: {videoSrc: string}) {
 
     const [isPlaying, setPlaying] = useState(false);
     const ref = useRef<HTMLVideoElement>(null);
-
-    useEffect(() => {
-        if (isDrag) {
-            ref.current?.pause()
-            setPlaying(false);
-        }
-    }, [isDrag])
 
     return (
         <button className='relative rounded-xl overflow-hidden aspect-[151/282] lg:aspect-[306/567] w-full' onClick={() => {setPlaying(!isPlaying); isPlaying ? ref.current?.pause() : ref.current?.play()}}>

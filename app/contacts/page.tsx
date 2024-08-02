@@ -19,15 +19,15 @@ export default function page () {
                         <div className="md:flex md:gap-4 lg:gap-0 lg:block 2xl:flex 2xl:justify-between md:items-start 3xl:block 4xl:flex">
                             <div className="flex items-center gap-2 mb-2">
                                 <img src="/phone-icon.svg" alt="phone icon" className="size-4 lg:size-6 invert"/>
-                                <p className="text-sm lg:text-lg leading-4 lg:leading-6 font-medium">(800) - 000 - 0000</p>
+                                <p className="text-sm lg:text-lg leading-4 lg:leading-6 font-medium">310-730-1550</p>
                             </div>
                             <div className="flex items-center gap-2 mb-2">
                                 <img src="/mail-icon.svg" alt="mail icon" className="size-4 lg:size-6 invert"/>
-                                <p className="text-sm lg:text-lg leading-4 lg:leading-6 font-medium">info@crosscountry.com</p>
+                                <p className="text-sm lg:text-lg leading-4 lg:leading-6 font-medium">contact@crosscountrymoving.company</p>
                             </div>
                             <div className="flex items-start gap-2">
                                 <img src="/map-icon.svg" alt="mail icon" className="size-4 lg:size-6"/>
-                                <p className="text-sm lg:text-lg leading-4 lg:leading-6 font-medium ">915 Broadway Ste 501, <br/> New York, NY 10010</p>
+                                <p className="text-sm lg:text-lg leading-4 lg:leading-6 font-medium ">1185 Campbell Ave Unit F12, <br/> San Jose, CA 95126</p>
                             </div>
                         </div>
                     </div>

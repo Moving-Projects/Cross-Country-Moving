@@ -9,11 +9,11 @@ export default function Footer () {
                         <p className="text-sm lg:text-lg leading-4 lg:leading-6 mb-2 font-medium text-white">Mon - Sun: 9AM - 6PM</p>
                         <div className="flex items-center gap-1 mb-2">
                             <img src="/phone-icon.svg" alt="phone icon" className="size-4"/>
-                            <p className="text-sm lg:text-lg leading-4 lg:leading-6 font-medium text-white">(800) - 000 - 0000</p>
+                            <p className="text-sm lg:text-lg leading-4 lg:leading-6 font-medium text-white">310-730-1550</p>
                         </div>
                         <div className="flex items-center gap-1 mb-2">
                             <img src="/mail-icon.svg" alt="mail icon" className="size-4"/>
-                            <p className="text-sm lg:text-lg leading-4 lg:leading-6 font-medium text-white">info@crosscountry.com</p>
+                            <p className="text-sm lg:text-lg leading-4 lg:leading-6 font-medium text-white">contact@crosscountrymoving.company</p>
                         </div>
                     </div>
                     <div className="lg:mr-8">
@@ -30,17 +30,16 @@ export default function Footer () {
                         </div>
                         <div>
                             <p className="font-russo text-sm lg:text-lg leading-4 lg:leading-6 mb-4 lg:mb-6 text-white">OUR SOCIALS</p>
-                            <a href="" className="inline-block mr-2"><img src="/instagram-icon.svg" alt="instagram icon" className="size-6" /></a>
-                            <a href="" className="inline-block"><img src="/facebook-icon.svg" alt="facebook icon" className="size-6" /></a>
+                            {/* <a href="" className="inline-block mr-2"><img src="/instagram-icon.svg" alt="instagram icon" className="size-6" /></a> */}
+                            <a target="_blank" href="https://www.facebook.com/crosscountymovingcompany" className="inline-block"><img src="/facebook-icon.svg" alt="facebook icon" className="size-[24px] mr-2" /></a>
+                            <a target="_blank" href="https://x.com/countrymoving" className="inline-block"><img src="/twitter-icon.svg" alt="twitter icon" className="size-[24px] mr-2" /></a>
+                            <a target="_blank" href="https://www.linkedin.com/company/cross-country-moving-company" className="inline-block"><img src="/linked-in-icon.svg" alt="linked in icon" className="size-[24px] mr-2" /></a>
+                            <a target="_blank" href="https://www.tripadvisor.com/Profile/countrymoving" className="inline-block"><img src="/tripadvisor-icon.svg" alt="tripadvisor icon" className="size-[24px]" /></a>
                         </div>
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row items-center lg:justify-center mt-20 lg:mt-32">
                     <p className="text-xs lg:text-base font-medium mb-2 lg:mb-0 text-white text-center">Copyright © 2024 Cross Country Moving. <br className="lg:hidden"/> All rights reserved </p>
-                    {/* <div className="flex items-center gap-2">
-                        <a href="https://studiomodvis.com/EN/home" className="text-xs lg:text-base font-medium text-white">Powered by Studio Modvis </a>
-                        <img src="/modvis-logo.svg" alt="modvis logo" className="size-2 lg:size-3"/>
-                    </div>   */}
                 </div>
             </div>
         </div>

@@ -14,7 +14,7 @@ export default function Hero () {
                         <p className="text-white text-xs lg:text-2xl lg:leading-6 font-medium">Easily estimate your move <span className="text-black">for free.</span></p>
                     </div>
                     <div className="flex flex-col lg:flex-row relative">
-                        <div className="absolute w-2/3 bottom-12 lg:top-0 left-0 h-1/2 bg-accent -z-10"></div>
+                        <div className="absolute w-3/4 bottom-12 lg:top-0 left-0 h-1/2 bg-accent -z-10"></div>
                         <div className="px-4 lg:px-12 pb-6 lg:pb-16 pt-2 lg:pt-8 bg-accent rounded-b-3xl lg:rounded-b-[3rem] lg:w-fit">
                         <HeroForm />
                         </div>

@@ -26,6 +26,7 @@ if (isMobile === null) return;
     return(
         <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DatePicker disablePast 
+            name="date"
 
             slotProps={{ 
               textField: {

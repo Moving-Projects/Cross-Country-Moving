@@ -25,6 +25,7 @@ export default function SizeSelect () {
 
     return (
         <Select required placeholder="Moving Size *" 
+            name="size"
             sx={{
                 borderRadius: '1.5rem',
                 backgroundColor: 'transparent',
