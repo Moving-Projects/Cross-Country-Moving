@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     const emailHtml = render(Email({props: formData}))
 
     const data = {
-        to: 'contact@trekmovers.com', 
+        to: 'tudorcebotarenco@gmail.com', 
         subject: 'Quote Request | Cross Country Moving',
         html: emailHtml
     }
