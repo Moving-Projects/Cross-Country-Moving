@@ -24,10 +24,11 @@ export async function POST(req: Request) {
     }
 
     const transporter = nodemailer.createTransport(mailConfig);
-    transporter.sendMail(data, (err, info) => {
-        if (err) { 
-            return Response.json({msg:'Technical Issue!, Please click on resend for verify your Email.'}, {status: 500});
-        }
-    });
+    await transporter.sendMail(data);
+    // transporter.sendMail(data, (err, info) => {
+    //     if (err) { 
+    //         return Response.json({msg:'Technical Issue!, Please click on resend for verify your Email.'}, {status: 500});
+    //     }
+    // });
     return Response.json({msg: "Email send succesfully!"}, {status: 201});
   }
