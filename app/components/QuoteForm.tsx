@@ -17,15 +17,12 @@ export default function QuoteForm () {
   
         const formData = new FormData(event.target);
   
-        console.log(formData.get('date'));
-        const response = await fetch('/api', {
+        await fetch('/api', {
             method: 'post',
             body: formData,
         });
 
-        if (response.status === 201) {
-            setConfirmationOpen(true);
-        }
+        setConfirmationOpen(true);
       };
 
     return (
