@@ -6,14 +6,14 @@ export default function Footer () {
                     <img src="/logo-inverted.png" alt="inverted logo" className="h-12 lg:h-14 w-fit lg:mr-24"/>
                     <div className="lg:mr-8">
                         <p className="font-russo text-sm lg:text-lg leading-4 lg:leading-6 mb-4 lg:mb-6 text-white">OUR CONTACTS</p>
-                        <p className="text-sm lg:text-lg leading-4 lg:leading-6 mb-2 font-medium text-white">Mon - Sun: 9AM - 6PM</p>
+                        <p className="text-lg lg:text-lg leading-4 lg:leading-6 mb-2 font-medium text-white">Mon - Sun: 8AM - 7PM</p>
                         <div className="flex items-center gap-1 mb-2">
                             <img src="/phone-icon.svg" alt="phone icon" className="size-4"/>
-                            <p className="text-sm lg:text-lg leading-4 lg:leading-6 font-medium text-white">310-730-1550</p>
+                            <a href="tel:3107301550" className="text-lg lg:text-lg leading-4 lg:leading-6 font-medium text-white">310-730-1550</a>
                         </div>
                         <div className="flex items-center gap-1 mb-2">
                             <img src="/mail-icon.svg" alt="mail icon" className="size-4"/>
-                            <p className="text-sm lg:text-lg leading-4 lg:leading-6 font-medium text-white">contact@crosscountrymoving.company</p>
+                            <p className="text-lg lg:text-lg leading-4 lg:leading-6 font-medium text-white break-all">contact@crosscountrymoving.company</p>
                         </div>
                     </div>
                     <div className="lg:mr-8">
